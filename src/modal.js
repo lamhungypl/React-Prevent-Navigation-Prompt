@@ -34,7 +34,7 @@ const useNavigationPrompt = (when: boolean) => {
 
   const handleBlockedNavigation = useCallback(
     nextLocation => {
-      if (confirmedNavigation) {
+      if (!confirmedNavigation) {
         setShowPrompt(true);
         setLastLocation(nextLocation);
         return false;
