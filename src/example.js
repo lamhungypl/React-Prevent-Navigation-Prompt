@@ -4,6 +4,7 @@ import { Button, Modal } from 'antd';
 import { LogoutOutlined } from '@ant-design/icons';
 
 import 'antd/dist/antd.css';
+import NavigateModal from './modal';
 
 // Sometimes you want to prevent the user from
 // navigating away from a page. The most common
@@ -88,7 +89,7 @@ function useCallbackPrompt(when) {
 
   usePrompt(handleBlockedNavigation, when);
 
-  return [showPrompt, confirmNavigation, cancelNavigation];
+  return { showPrompt, confirmNavigation, cancelNavigation };
 }
 
 function sleep(ms) {
@@ -96,7 +97,7 @@ function sleep(ms) {
 }
 
 function SavePrompt({ isBlocking, isSaving, onSave }) {
-  const [showPrompt, confirmNavigation, cancelNavigation] = useCallbackPrompt(isBlocking);
+  const { showPrompt, confirmNavigation, cancelNavigation } = useCallbackPrompt(isBlocking);
   return (
     <Modal
       title="You have unsaved changes"
@@ -145,7 +146,8 @@ function BlockingForm() {
   return (
     <form>
       <p>Blocking?? {isBlocking ? 'Yes, you have unsaved changes. Try to navigate to a different page' : 'Nope'}</p>
-      <SavePrompt isBlocking={isBlocking} isSaving={isSaving} onSave={save} />
+      {/* <SavePrompt isBlocking={isBlocking} isSaving={isSaving} onSave={save} /> */}
+      <NavigateModal blocking={isBlocking} />
       <p>
         <input
           size="50"
