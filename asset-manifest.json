@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/React-Prevent-Navigation-Prompt/static/js/main.aa316095.chunk.js",
+    "main.js.map": "/React-Prevent-Navigation-Prompt/static/js/main.aa316095.chunk.js.map",
+    "runtime-main.js": "/React-Prevent-Navigation-Prompt/static/js/runtime-main.8d060a74.js",
+    "runtime-main.js.map": "/React-Prevent-Navigation-Prompt/static/js/runtime-main.8d060a74.js.map",
+    "static/css/2.e53444ae.chunk.css": "/React-Prevent-Navigation-Prompt/static/css/2.e53444ae.chunk.css",
+    "static/js/2.7f768800.chunk.js": "/React-Prevent-Navigation-Prompt/static/js/2.7f768800.chunk.js",
+    "static/js/2.7f768800.chunk.js.map": "/React-Prevent-Navigation-Prompt/static/js/2.7f768800.chunk.js.map",
+    "index.html": "/React-Prevent-Navigation-Prompt/index.html",
+    "precache-manifest.5d7f21e5f14c84761a6f7511e3ab4034.js": "/React-Prevent-Navigation-Prompt/precache-manifest.5d7f21e5f14c84761a6f7511e3ab4034.js",
+    "service-worker.js": "/React-Prevent-Navigation-Prompt/service-worker.js",
+    "static/css/2.e53444ae.chunk.css.map": "/React-Prevent-Navigation-Prompt/static/css/2.e53444ae.chunk.css.map",
+    "static/js/2.7f768800.chunk.js.LICENSE.txt": "/React-Prevent-Navigation-Prompt/static/js/2.7f768800.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d060a74.js",
+    "static/css/2.e53444ae.chunk.css",
+    "static/js/2.7f768800.chunk.js",
+    "static/js/main.aa316095.chunk.js"
+  ]
+}
