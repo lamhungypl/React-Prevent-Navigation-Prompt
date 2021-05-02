@@ -14,16 +14,16 @@ import NavigateModal from './modal';
 
 export default function PreventingTransitionsExample() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ul>
         <li>
           <Link to="/">Form</Link>
         </li>
         <li>
-          <Link to="/one">One</Link>
+          <Link to="/one">PageOne</Link>
         </li>
         <li>
-          <Link to="/two">Two</Link>
+          <Link to="/two">PageTwo</Link>
         </li>
       </ul>
 
